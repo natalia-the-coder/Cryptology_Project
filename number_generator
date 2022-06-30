@@ -1,0 +1,30 @@
+import random
+random_number = random.randint(1,20)
+
+counter = 5
+
+while counter >0:
+  print("Pick a number between 1 and 20.")
+  print("Guesses:", counter)
+  user_guess = input()
+  user_guess = int(user_guess)
+
+  if user_guess == random_number:
+    print("Congrats certified genius, you guessed the number!")
+    break
+
+  elif user_guess < random_number:
+    print("Too low")
+    print()
+
+  elif user_guess > random_number:
+    print("Too high")
+    print()
+  counter -= 1
+else:
+  print("error: please enter a valid integer within the range given.")
+
+  if counter == 0:
+    print("Out of guesses, nice try.")
+    print("The correct number was ", random_number)
+
