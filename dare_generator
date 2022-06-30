@@ -1,0 +1,11 @@
+
+import random
+
+action = ["Run up to", "Jump on", "Do a cartwheel to", "skip around", "Dance on"]
+
+object = ["a table", "a classroomm", "a chair", "a stranger", "your crush", "a teacher"]
+
+dare = ["yell your name as loud as possible", "reveal your darkest secret", "lick your nose", "cut your hair", "sing your favorite song", "twerk"]
+
+print("I dare you to", random.choice(action), random.choice(object), "and", random.choice(dare))
+
